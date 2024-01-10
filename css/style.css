@@ -22,27 +22,75 @@
 /*******************************************/
 
 body {
-
+     background: gray;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+
+.container {
      border: 2px solid orange;
+     height: 100vh;
+     display: flex;
 }
 
-#projectsSection {
-     border: 2px solid blue;
+#aboutContainer {
+     border: 20px solid green;
+     width: 30%;
+     display: flex;
+     flex-direction: column;
+}
+
+#headShotContainer {
+     border: 5px solid blue;
+     height: 40%; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#headShotContainer img {
+     height: 400px;
+     border-radius: 50%;
+     border: 2px solid black;
+}
+
+#aboutBody {
+     border: 5px solid white;
+     height: 60%;
+}
+
+#projectsContainer {
+     border: 20px solid red;
+     width: 70%;
+     display: flex;
+     flex-direction: column;
+     overflow-y: auto;
 }
 
 .projects {
-     border: 2px solid green;
+     border: 5px solid purple;
+     min-height: 50%;
+     display: flex;
+     justify-content: center;
 }
 
-footer {
-     border: 2px solid red;
+.projectContainer {
+     border: 5px solid orange;
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding-left: 100px;
+}
+
+
+.projectContainer img {
+     height: 85%;
+     width: 90%;
+     object-fit: cover;
 }
 
 /******************************************
