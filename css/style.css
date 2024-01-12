@@ -91,8 +91,76 @@ body {
      height: 85%;
      width: 90%;
      object-fit: cover;
+     border: 5px solid green;;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 1700px) {
+     #aboutContainer {
+          width: 40%;
+     }
+     
+     #headShotContainer {
+
+     }
+
+     #headShotContainer img {
+          height: 350px;
+          border-radius: 50%;
+          border: 2px solid black;
+     }
+
+     .projectContainer {
+          padding-left: 0;
+          width: 100%;
+     }
+}
+
+@media (max-width: 950px) {
+     .container {
+          flex-direction: column;
+          height: auto;
+     }
+
+     #aboutContainer {
+          width: 100%;
+     }
+
+     #headShotContainer {
+          height: 20%; 
+     }
+     
+     #headShotContainer img {
+          height: 200px;
+          border-radius: 50%;
+     }
+
+     #aboutBody {
+          height: auto;
+     }
+
+     #projectsContainer {
+          width: 100%;
+          height: auto;
+     }
+
+     .projects {
+
+     }
+
+     .projectContainer {
+          width: 100%;
+          padding-left: 0;
+          padding-top: 50px;
+          justify-content: flex-start;
+     }
+
+     .projectContainer img {
+          height: 85%;
+          width: 100%;
+          object-fit: contain;
+     }
+}
